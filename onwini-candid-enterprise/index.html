@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1730">
+<meta name="description" content="Onwini Candid Enterprise – Your trusted destination for quality electronics, home appliances, generators, solar equipment, mattresses, furniture and household essentials in Benin City, Nigeria.">
+<title>Onwini Candid Enterprise | Quality for Every Home</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      },
+      colors: {
+        primary: 'var(--vertlio-primary)',
+        secondary: 'var(--vertlio-secondary)'
+      }
+    }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --vertlio-primary: #10b981;
+  --vertlio-secondary: #0f172a;
+  --navy: #0b1730;
+  --navy-light: #142440;
+  --gold: #c7a365;
+  --gold-light: #e6d0a5;
+  --cream: #f8f7f3;
+  --white: #ffffff;
+  --text: #172033;
+  --muted: #727b89;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+button, input, textarea, select { font: inherit; }
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+a { text-decoration: none; }
+
+img { max-width: 100%; }
+
+.serif { font-family: 'Playfair Display', serif; }
+
+.container-main {
+  width: min(1180px, calc(100% - 44px));
+  margin: auto;
+}
+
+.topbar {
+  background: var(--navy);
+  color: white;
+  font-size: 11px;
+  letter-spacing: .4px;
+}
+
+.site-header {
+  background: rgba(255,255,255,.97);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #eceef1;
+  backdrop-filter: blur(18px);
+}
+
+.brand-mark {
+  width: 43px;
+  height: 43px;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid var(--gold);
+  flex-shrink: 0;
+}
+
+.brand-name {
+  color: var(--navy);
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -.5px;
+}
+
+.brand-subtitle {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #9b7b42;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 650;
+  color: #394255;
+  padding: 13px 0;
+  position: relative;
+  transition: .25s;
+  white-space: nowrap;
+}
+
+.nav-link:hover, .nav-link.active { color: #a47c36; }
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+}
+
+.gold-btn {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 14px 23px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--gold);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.gold-btn:hover {
+  background: #e2c48c;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(199,163,101,.2);
+}
+
+.outline-btn {
+  padding: 13px 22px;
+  color: white;
+  border: 1px solid rgba(255,255,255,.55);
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.outline-btn:hover {
+  background: white;
+  color: var(--navy);
+}
+
+.dark-btn {
+  background: var(--navy);
+  color: white;
+  padding: 14px 23px;
+  font-weight: 750;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: .3s;
+}
+
+.dark-btn:hover {
+  background: #203759;
+  transform: translateY(-2px);
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 15px 22px 25px;
+  border-top: 1px solid #eee;
+  box-shadow: 0 15px 25px rgba(0,0,0,.08);
+}
+
+.mobile-menu.open { display: block; }
+
+.mobile-menu a {
+  display: block;
+  padding: 13px 5px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.page { display: none; min-height: 70vh; }
+.page.active { display: block; }
+
+.hero {
+  background: var(--navy);
+  min-height: 620px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border: 1px solid rgba(199,163,101,.17);
+  border-radius: 50%;
+  right: -150px;
+  top: -130px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border: 1px solid rgba(199,163,101,.13);
+  border-radius: 50%;
+  right: -65px;
+  top: -45px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 85px 0;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 53%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .75;
+  mask-image: linear-gradient(to right, transparent 0%, black 34%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 34%);
+}
+
+.hero-label {
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-label::before {
+  content: '';
+  height: 1px;
+  width: 35px;
+  background: var(--gold);
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  font-weight: 800;
+  max-width: 670px;
+  margin: 25px 0;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero-description {
+  max-width: 450px;
+  font-size: 14px;
+  line-height: 2;
+  color: #c5ccda;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 52px;
+  border-top: 1px solid rgba(255,255,255,.16);
+  padding-top: 23px;
+  max-width: 460px;
+}
+
+.hero-stat strong {
+  display: block;
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.hero-stat small {
+  font-size: 10px;
+  color: #bbc3d0;
+}
+
+.section { padding: 90px 0; }
+
+.section-cream { background: var(--cream); }
+
+.section-label {
+  color: #a17d43;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--navy);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+}
+
+.section-description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.category-card {
+  background: white;
+  overflow: hidden;
+  position: relative;
+  transition: .35s;
+  border: 1px solid #efefed;
+  display: block;
+}
+
+.category-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 45px rgba(11,23,48,.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  transition: transform .6s;
+}
+
+.category-card:hover img { transform: scale(1.055); }
+
+.category-info { padding: 22px; }
+
+.category-info h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.category-info p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.category-arrow {
+  color: #ad8849;
+  font-size: 20px;
+  margin-top: 15px;
+  display: block;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #eee;
+  transition: .3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(11,23,48,.09);
+}
+
+.product-image {
+  height: 205px;
+  position: relative;
+  overflow: hidden;
+  background: #f4f3ef;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.product-card:hover .product-image img { transform: scale(1.07); }
+
+.product-tag {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: var(--navy);
+  color: white;
+  padding: 7px 10px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .6px;
+}
+
+.product-info { padding: 19px; flex: 1; display: flex; flex-direction: column; }
+
+.product-category {
+  color: #a17d43;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.product-info h3 {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 8px 0;
+}
+
+.product-info p {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.product-price {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.product-enquiry {
+  background: #edf5f0;
+  color: #16734c;
+  padding: 12px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+.product-enquiry:hover {
+  background: #176f4b;
+  color: white;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.split-image {
+  position: relative;
+  min-height: 440px;
+}
+
+.split-image img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.image-caption {
+  position: absolute;
+  right: -20px;
+  bottom: 25px;
+  background: var(--navy);
+  color: white;
+  padding: 22px 26px;
+  width: 180px;
+  border-bottom: 3px solid var(--gold);
+}
+
+.image-caption strong {
+  color: var(--gold);
+  font-size: 25px;
+  display: block;
+}
+
+.image-caption small {
+  font-size: 10px;
+  color: #d0d5df;
+  line-height: 1.7;
+}
+
+.feature-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 23px;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  background: #f4efe5;
+  color: #99783e;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+}
+
+.feature-row h4 {
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.feature-row p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.promo {
+  background: var(--navy);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 65px 0;
+}
+
+.promo::after {
+  content: '';
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(199,163,101,.25);
+  border-radius: 50%;
+  position: absolute;
+  right: -90px;
+  top: -160px;
+}
+
+.promo h2 {
+  font-size: clamp(27px,4vw,43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.breadcrumb {
+  background: var(--navy);
+  padding: 60px 0;
+  color: white;
+}
+
+.breadcrumb h1 {
+  font-size: clamp(33px,5vw,53px);
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  margin: 10px 0;
+}
+
+.breadcrumb p {
+  font-size: 12px;
+  color: #c4cbd6;
+}
+
+.breadcrumb small {
+  color: var(--gold-light);
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.search-wrap {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  background: white;
+  max-width: 430px;
+  height: 46px;
+}
+
+.search-wrap input {
+  flex: 1;
+  min-width: 0;
+  padding: 0 14px;
+  outline: none;
+  font-size: 11px;
+  color: var(--navy);
+}
+
+.search-wrap button {
+  background: var(--navy);
+  color: white;
+  padding: 0 17px;
+  font-size: 11px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  border: 1px solid #e7e7e7;
+  font-size: 10px;
+  font-weight: 750;
+  color: #596170;
+  background: white;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: var(--navy);
+  color: white;
+  border-color: var(--navy);
+}
+
+.empty-state {
+  display: none;
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-card {
+  background: white;
+  border: 1px solid #ececec;
+  padding: 27px;
+  transition: .3s;
+}
+
+.contact-card:hover { border-color: var(--gold); }
+
+.contact-card-icon {
+  width: 45px;
+  height: 45px;
+  background: #f4efe5;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+.contact-card h3 {
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e3e5e9;
+  background: #fff;
+  outline: none;
+  font-size: 12px;
+  color: var(--navy);
+  transition: .2s;
+  border-radius: 0;
+}
+
+.form-control:focus { border-color: var(--gold); }
+
+.form-control::placeholder { color: #a1a6af; }
+
+.form-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer {
+  background: #071225;
+  color: white;
+  padding: 75px 0 25px;
+}
+
+.footer h4 {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  color: var(--gold-light);
+}
+
+.footer p, .footer a {
+  color: #aab3c2;
+  font-size: 11px;
+  line-height: 2.2;
+}
+
+.footer a:hover { color: var(--gold); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.13);
+  margin-top: 55px;
+  padding-top: 23px;
+  font-size: 10px;
+  color: #8d98aa;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 200;
+  background: #20bd68;
+  color: white;
+  border-radius: 50px;
+  height: 54px;
+  padding: 0 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+  font-size: 11px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-5px);
+  background: #159c52;
+}
+
+.menu-toggle {
+  width: 42px;
+  height: 42px;
+  background: #f5f5f5;
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in { animation: fade-in-up .7s ease both; }
+
+@media(max-width:1020px) {
+  .desktop-nav { display:none !important; }
+  .mobile-menu { display:none; }
+  .mobile-menu.open { display:block; }
+}
+
+@media(max-width:768px) {
+  .container-main { width: calc(100% - 34px); }
+  .section { padding: 65px 0; }
+  .hero { min-height: 650px; }
+  .hero-image {
+    width: 100%;
+    opacity: .29;
+    mask-image: linear-gradient(to bottom, transparent, black);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  }
+  .hero h1 { letter-spacing: -2px; font-size: 48px; }
+  .hero-content { padding: 70px 0; }
+  .hero-stats { gap: 23px; }
+  .split-section { grid-template-columns: 1fr; gap: 40px; }
+  .split-image img { height: 330px; }
+  .split-image { min-height: 330px; }
+  .image-caption { right: -5px; bottom: 15px; }
+  .category-card img { height: 175px; }
+  .product-image { height: 165px; }
+  .product-info { padding: 13px; }
+  .promo { padding: 52px 0; }
+  .footer { padding-top: 55px; }
+}
+
+@media(max-width:420px) {
+  .hero h1 { font-size: 41px; }
+  .hero-stats { gap: 17px; }
+  .hero-stat strong { font-size: 18px; }
+  .category-card img { height: 145px; }
+  .product-image { height: 140px; }
+  .product-info h3 { font-size: 11px; }
+  .whatsapp-float { right: 12px; bottom: 13px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar py-3">
+  <div class="container-main flex flex-wrap justify-between items-center gap-2">
+    <span>✦ QUALITY PRODUCTS. BETTER LIVING.</span>
+    <span>📍 Benin City, Edo State, Nigeria &nbsp; | &nbsp; ☎ 07056541848</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container-main h-20 flex items-center justify-between gap-5">
+    <a href="/" id="brand-logo-link" class="font-black tracking-tight text-2xl flex items-center gap-3" onclick="navigate('home');return false;">
+      <span class="brand-mark">O</span>
+      <span>
+        <span class="brand-name block">ONWINI CANDID</span>
+        <span class="brand-subtitle block">ENTERPRISE</span>
+      </span>
+    </a>
+
+    <nav class="desktop-nav flex items-center gap-6">
+      <a href="/" class="nav-link active" data-nav="home">Home</a>
+      <a href="/electrical-electronics" class="nav-link" data-nav="electrical" onclick="navigate('electrical');return false;">Electronics</a>
+      <a href="/home-appliances" class="nav-link" data-nav="appliances" onclick="navigate('appliances');return false;">Appliances</a>
+      <a href="/generators-solar" class="nav-link" data-nav="generators" onclick="navigate('generators');return false;">Generators & Solar</a>
+      <a href="/furniture-home-decor" class="nav-link" data-nav="furniture" onclick="navigate('furniture');return false;">Furniture</a>
+      <a href="/about-us" class="nav-link" data-nav="about" onclick="navigate('about');return false;">About</a>
+      <a href="/contact-us" class="nav-link" data-nav="contact" onclick="navigate('contact');return false;">Contact</a>
+    </nav>
+
+    <div class="hidden lg:flex">
+      <a href="https://wa.me/2347056541848" target="_blank" class="gold-btn">ENQUIRE NOW ↗</a>
+    </div>
+
+    <button class="menu-toggle lg:hidden" id="menuToggle" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="/" onclick="navigate('home');return false;">Home</a>
+    <a href="/electrical-electronics" onclick="navigate('electrical');return false;">Electrical & Electronics</a>
+    <a href="/home-appliances" onclick="navigate('appliances');return false;">Home Appliances</a>
+    <a href="/generators-solar" onclick="navigate('generators');return false;">Generators & Solar</a>
+    <a href="/beddings-mattresses" onclick="navigate('beddings');return false;">Beddings & Mattresses</a>
+    <a href="/kitchen-equipment" onclick="navigate('kitchen');return false;">Kitchen Equipment</a>
+    <a href="/furniture-home-decor" onclick="navigate('furniture');return false;">Furniture & Home Decor</a>
+    <a href="/paints-decoration" onclick="navigate('paints');return false;">Paints & Decoration</a>
+    <a href="/about-us" onclick="navigate('about');return false;">About Us</a>
+    <a href="/contact-us" onclick="navigate('contact');return false;">Contact Us</a>
+    <a href="https://wa.me/2347056541848" target="_blank" style="color:#168c55;">Chat with us on WhatsApp ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- =========================================
+     HOME PAGE
+========================================= -->
+<div class="page active" id="page-home">
+
+<section class="hero">
+  <img class="hero-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Elegant modern home interior">
+  <div class="container-main">
+    <div class="hero-content animate-in">
+      <div class="hero-label">WELCOME TO ONWINI CANDID ENTERPRISE</div>
+      <h1>Everything Your Home Needs. <span>All in One Place.</span></h1>
+      <p class="hero-description">From quality electronics and reliable generators to beautiful furniture and everyday household essentials, discover products that make living better.</p>
+
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="/contact-us" class="gold-btn" onclick="navigate('contact');return false;">EXPLORE OUR COLLECTION ↗</a>
+        <a href="https://wa.me/2347056541848" target="_blank" class="outline-btn">CHAT WITH US</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>8+</strong>
+          <small>Product Categories</small>
+        </div>
+        <div class="hero-stat">
+          <strong>Quality</strong>
+          <small>Products & Essentials</small>
+        </div>
+        <div class="hero-stat">
+          <strong>Benin</strong>
+          <small>City, Nigeria</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY SECTION -->
+<section class="section section-cream">
+  <div class="container-main">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="section-label mb-4">EXPLORE OUR COLLECTION</div>
+      <h2 class="section-title">Discover What Your Home Deserves</h2>
+      <p class="section-description mt-4">Explore our diverse collection of carefully selected products, bringing convenience, comfort and style into your everyday life.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+
+      <a href="/electrical-electronics" class="category-card" onclick="navigate('electrical');return false;">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Electrical and electronic products">
+        <div class="category-info">
+          <h3>Electrical & Electronics</h3>
+          <p>Modern electronics and electrical essentials.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/home-appliances" class="category-card" onclick="navigate('appliances');return false;">
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Home appliances">
+        <div class="category-info">
+          <h3>Home Appliances</h3>
+          <p>Practical appliances for everyday living.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/generators-solar" class="category-card" onclick="navigate('generators');return false;">
+        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=700&q=80" alt="Power and solar energy">
+        <div class="category-info">
+          <h3>Generators & Solar</h3>
+          <p>Power solutions for homes and businesses.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/beddings-mattresses" class="category-card" onclick="navigate('beddings');return false;">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=700&q=80" alt="Bedroom and bedding">
+        <div class="category-info">
+          <h3>Beddings & Mattresses</h3>
+          <p>Comfort, relaxation and beautiful bedrooms.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/kitchen-equipment" class="category-card" onclick="navigate('kitchen');return false;">
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Kitchen equipment">
+        <div class="category-info">
+          <h3>Kitchen Equipment</h3>
+          <p>Make cooking and food preparation easier.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/furniture-home-decor" class="category-card" onclick="navigate('furniture');return false;">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Furniture and interior decor">
+        <div class="category-info">
+          <h3>Furniture & Home Decor</h3>
+          <p>Furniture and finishing touches for your space.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/paints-decoration" class="category-card" onclick="navigate('paints');return false;">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=700&q=80" alt="Paint and decoration">
+        <div class="category-info">
+          <h3>Paints & Decoration</h3>
+          <p>Beautiful finishes and colours for every space.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="/contact-us" class="category-card" onclick="navigate('contact');return false;">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80" alt="Beautiful modern home">
+        <div class="category-info">
+          <h3>And Much More</h3>
+          <p>Contact us about your household needs.</p>
+          <span class="category-arrow">↗</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ZIGZAG SECTION -->
+<section class="section">
+  <div class="container-main">
+    <div class="split-section">
+      <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Beautifully furnished modern home">
+        <div class="image-caption">
+          <strong>ONE STOP</strong>
+          <small>For quality products and everyday household essentials.</small>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label mb-4">MORE THAN JUST A STORE</div>
+        <h2 class="section-title">Making Quality Living More Accessible.</h2>
+        <p class="section-description mt-5">At Onwini Candid Enterprise, we understand that the right products make a difference in every home. That's why we bring together a wide selection of household essentials under one roof.</p>
+        <p class="section-description mt-3">Whether you are furnishing a new home, upgrading your appliances or looking for reliable power solutions, we are here to help you find what you need.</p>
+
+        <div class="feature-row">
+          <div class="feature-icon">✦</div>
+          <div>
+            <h4>Diverse Product Selection</h4>
+            <p>Explore different categories of home and lifestyle products in one place.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon">◇</div>
+          <div>
+            <h4>Customer-Focused Service</h4>
+            <p>Get assistance when choosing products that suit your needs.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon">✓</div>
+          <div>
+            <h4>Convenient Enquiries</h4>
+            <p>Contact us directly on WhatsApp to ask about products and availability.</p>
+          </div>
+        </div>
+
+        <a href="/about-us" onclick="navigate('about');return false;" class="dark-btn mt-8">DISCOVER OUR STORY ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section section-cream">
+  <div class="container-main">
+    <div class="flex flex-wrap justify-between items-end gap-5 mb-10">
+      <div>
+        <div class="section-label mb-3">A LOOK AT OUR COLLECTION</div>
+        <h2 class="section-title">Explore Featured Products</h2>
+        <p class="section-description mt-3">A selection of products from our different categories.</p>
+      </div>
+      <a href="/contact-us" onclick="navigate('contact');return false;" class="dark-btn">MAKE AN ENQUIRY ↗</a>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5" id="featuredProducts"></div>
+  </div>
+</section>
+
+<!-- PROMOTION -->
+<section class="promo">
+  <div class="container-main relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="max-w-xl">
+      <div class="section-label mb-4" style="color:var(--gold-light)">LET'S HELP YOU FIND IT</div>
+      <h2>Looking for Something Specific?</h2>
+      <p class="text-xs leading-7 text-gray-300 mt-4">Tell us what you need. Our team is available to assist you with product enquiries and information.</p>
+    </div>
+    <a href="https://wa.me/2347056541848?text=Hello%20Onwini%20Candid%20Enterprise%2C%20I%20would%20like%20to%20make%20a%20product%20enquiry." target="_blank" class="gold-btn whitespace-nowrap">ENQUIRE ON WHATSAPP ↗</a>
+  </div>
+</section>
+
+</div>
+
+<!-- =========================================
+     CATEGORY PAGE TEMPLATE
+========================================= -->
+<div class="page" id="page-electrical"></div>
+<div class="page" id="page-appliances"></div>
+<div class="page" id="page-generators"></div>
+<div class="page" id="page-beddings"></div>
+<div class="page" id="page-kitchen"></div>
+<div class="page" id="page-furniture"></div>
+<div class="page" id="page-paints"></div>
+
+<!-- =========================================
+     ABOUT PAGE
+========================================= -->
+<div class="page" id="page-about">
+
+<section class="breadcrumb">
+  <div class="container-main">
+    <small>GET TO KNOW US</small>
+    <h1>About Onwini Candid Enterprise</h1>
+    <p>Home / About Us</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-main">
+    <div class="split-section">
+      <div>
+        <div class="section-label mb-4">WHO WE ARE</div>
+        <h2 class="section-title">A Better Shopping Experience for Your Home.</h2>
+        <p class="section-description mt-5">Onwini Candid Enterprise is a retail business located in Benin City, Edo State, Nigeria. We specialise in the sale of electrical and electronic products, home appliances, generators, solar equipment, bedding, mattresses, furniture and other household essentials.</p>
+        <p class="section-description mt-4">Our goal is to make it easier for individuals, families and businesses to access a variety of products they need for comfortable, functional and beautiful spaces.</p>
+        <p class="section-description mt-4">From everyday household necessities to products that help transform your living environment, we are committed to serving our customers with attention and care.</p>
+        <a href="/contact-us" class="gold-btn mt-8" onclick="navigate('contact');return false;">GET IN TOUCH ↗</a>
+      </div>
+
+      <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Premium modern home interior">
+        <div class="image-caption">
+          <strong>ONWINI</strong>
+          <small>Quality products for modern living.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container-main text-center">
+    <div class="section-label mb-4">WHAT GUIDES US</div>
+    <h2 class="section-title mb-12">The Values Behind Our Business</h2>
+    <div class="grid md:grid-cols-3 gap-5 text-left">
+
+      <div class="contact-card">
+        <div class="contact-card-icon">✦</div>
+        <h3>Quality</h3>
+        <p>We believe customers deserve products that meet their needs and expectations.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">◇</div>
+        <h3>Variety</h3>
+        <p>We bring different product categories together to make shopping more convenient.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">♡</div>
+        <h3>Customer Satisfaction</h3>
+        <p>We value every customer and aim to provide a helpful and pleasant shopping experience.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="promo">
+  <div class="container-main relative z-10 text-center">
+    <div class="section-label mb-4">WE WOULD LOVE TO HEAR FROM YOU</div>
+    <h2>Let's Find the Right Products for You.</h2>
+    <p class="text-xs text-gray-300 mt-4 mb-7">Reach out to us today and let's discuss what you need.</p>
+    <a href="https://wa.me/2347056541848" target="_blank" class="gold-btn">CONTACT US ON WHATSAPP ↗</a>
+  </div>
+</section>
+
+</div>
+
+<!-- =========================================
+     CONTACT PAGE
+========================================= -->
+<div class="page" id="page-contact">
+
+<section class="breadcrumb">
+  <div class="container-main">
+    <small>WE ARE HERE TO HELP</small>
+    <h1>Let's Talk About What You Need.</h1>
+    <p>Home / Contact Us</p>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container-main">
+    <div class="text-center max-w-xl mx-auto mb-12">
+      <div class="section-label mb-4">GET IN TOUCH</div>
+      <h2 class="section-title">We'd Love to Hear From You.</h2>
+      <p class="section-description mt-4">Have a question about a product? Looking for something specific? Contact us and let's help you out.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 mb-14">
+      <div class="contact-card">
+        <div class="contact-card-icon">☎</div>
+        <h3>Call / WhatsApp</h3>
+        <p>07056541848</p>
+        <a href="https://wa.me/2347056541848" target="_blank" class="text-xs font-bold mt-4 inline-block" style="color:#98783f;">START A CONVERSATION ↗</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">⌖</div>
+        <h3>Our Location</h3>
+        <p>Benin City, Edo State, Nigeria.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Benin+City+Edo+State+Nigeria" target="_blank" class="text-xs font-bold mt-4 inline-block" style="color:#98783f;">VIEW ON MAP ↗</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">◷</div>
+        <h3>Product Enquiries</h3>
+        <p>Reach out to us on WhatsApp for product information, availability and pricing.</p>
+        <a href="https://wa.me/2347056541848" target="_blank" class="text-xs font-bold mt-4 inline-block" style="color:#98783f;">MAKE AN ENQUIRY ↗</a>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <div class="section-label mb-4">SEND US A MESSAGE</div>
+        <h2 class="section-title">How Can We Assist You?</h2>
+        <p class="section-description mt-4 mb-8">Complete the form below and your message will be prepared for direct delivery to our WhatsApp business line.</p>
+
+        <form id="contactForm" class="bg-white p-6 md:p-9 border border-gray-200">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="form-label" for="customerName">YOUR FULL NAME *</label>
+              <input class="form-control" id="customerName" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label class="form-label" for="customerPhone">PHONE NUMBER *</label>
+              <input class="form-control" id="customerPhone" name="phone" type="tel" placeholder="Your phone number" required>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <label class="form-label" for="customerInterest">WHAT ARE YOU INTERESTED IN?</label>
+            <select class="form-control" id="customerInterest" name="interest" required>
+              <option value="">Select a product category</option>
+              <option>Electrical & Electronics</option>
+              <option>Home Appliances</option>
+              <option>Generators & Solar</option>
+              <option>Beddings & Mattresses</option>
+              <option>Kitchen Equipment</option>
+              <option>Furniture & Home Decor</option>
+              <option>Paints & Decoration</option>
+              <option>Other Products</option>
+            </select>
+          </div>
+
+          <div class="mt-5">
+            <label class="form-label" for="customerMessage">YOUR MESSAGE *</label>
+            <textarea class="form-control" id="customerMessage" name="message" rows="5" placeholder="Tell us what you are looking for..." required></textarea>
+          </div>
+
+          <button type="submit" class="gold-btn w-full mt-6">SEND MESSAGE VIA WHATSAPP ↗</button>
+          <p class="text-center text-xs mt-4" style="color:#858b95;">Your message will open directly in WhatsApp for you to send.</p>
+        </form>
+      </div>
+
+      <div>
+        <div class="section-label mb-4">VISIT OR CONTACT US</div>
+        <h2 class="section-title">Onwini Candid Enterprise</h2>
+        <p class="section-description mt-4">Your destination for electrical products, home appliances, generators, bedding, furniture and much more.</p>
+
+        <div class="mt-8 bg-white border border-gray-200 p-5">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Beautiful home interior" class="w-full h-60 object-cover">
+          <div class="py-5">
+            <h3 class="font-extrabold text-sm mb-3" style="color:var(--navy)">ONWINI CANDID ENTERPRISE</h3>
+            <p class="text-xs leading-7" style="color:#707887">📍 Benin City, Edo State, Nigeria.</p>
+            <p class="text-xs leading-7" style="color:#707887">☎ 07056541848</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Onwini+Candid+Enterprise+Benin+City+Edo+Nigeria" target="_blank" class="dark-btn mt-4">GET DIRECTIONS ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container-main">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <div class="lg:col-span-1">
+        <a href="/" onclick="navigate('home');return false;" class="flex items-center gap-3 mb-6">
+          <span class="brand-mark">O</span>
+          <span>
+            <span class="block text-white font-black text-sm">ONWINI CANDID</span>
+            <span class="block text-xs tracking-widest mt-1" style="color:var(--gold)">ENTERPRISE</span>
+          </span>
+        </a>
+        <p>A one-stop destination for quality electronics, household appliances, furniture, bedding and everyday essentials in Benin City, Nigeria.</p>
+        <a href="https://wa.me/2347056541848" target="_blank" class="gold-btn mt-6">CHAT WITH US ↗</a>
+      </div>
+
+      <div>
+        <h4>QUICK LINKS</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/" onclick="navigate('home');return false;">Home</a>
+          <a href="/about-us" onclick="navigate('about');return false;">About Us</a>
+          <a href="/contact-us" onclick="navigate('contact');return false;">Contact Us</a>
+          <a href="/electrical-electronics" onclick="navigate('electrical');return false;">Our Products</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>OUR CATEGORIES</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/electrical-electronics" onclick="navigate('electrical');return false;">Electrical & Electronics</a>
+          <a href="/home-appliances" onclick="navigate('appliances');return false;">Home Appliances</a>
+          <a href="/generators-solar" onclick="navigate('generators');return false;">Generators & Solar</a>
+          <a href="/beddings-mattresses" onclick="navigate('beddings');return false;">Beddings & Mattresses</a>
+          <a href="/kitchen-equipment" onclick="navigate('kitchen');return false;">Kitchen Equipment</a>
+          <a href="/furniture-home-decor" onclick="navigate('furniture');return false;">Furniture & Decor</a>
+          <a href="/paints-decoration" onclick="navigate('paints');return false;">Paints & Decoration</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>CONTACT INFORMATION</h4>
+        <p>📍 Benin City, Edo State, Nigeria.</p>
+        <p class="mt-3">☎ 07056541848</p>
+        <p class="mt-3">💬 WhatsApp Enquiries</p>
+        <a href="https://wa.me/2347056541848" target="_blank" class="inline-block mt-3" style="color:var(--gold-light)">Message Us Directly ↗</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom flex flex-col md:flex-row justify-between gap-3">
+      <p>© <span id="currentYear">2026</span> Onwini Candid Enterprise. All Rights Reserved.</p>
+      <p>Quality for Every Home. Excellence in Every Choice.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float" href="https://wa.me/2347056541848" target="_blank" aria-label="Chat with Onwini Candid Enterprise on WhatsApp">
+  <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>
+    <path d="M8.5 9.5c.5 2 2 3.5 4 4l1-1 2 1-.5 2c-4 1-8.5-3.5-8-7.5l2-.5 1 2z"/>
+  </svg>
+  <span>Chat with us</span>
+</a>
+
+<script>
+/* =========================================
+   BUSINESS CONFIGURATION
+========================================= */
+
+const BUSINESS = {
+  name: "Onwini Candid Enterprise",
+  phone: "2347056541848",
+  displayPhone: "07056541848"
+};
+
+const whatsappLink = "https://wa.me/" + BUSINESS.phone;
+
+/* =========================================
+   PRODUCT DATABASE
+   Prices are available on enquiry.
+========================================= */
+
+const products = [
+
+  {
+    id: 1,
+    name: "Modern LED Television",
+    category: "Electrical & Electronics",
+    page: "electrical",
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80",
+    description: "Upgrade your entertainment experience with a modern television.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 2,
+    name: "Modern Home Sound System",
+    category: "Electrical & Electronics",
+    page: "electrical",
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80",
+    description: "Enjoy an enhanced audio experience at home.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 3,
+    name: "Quality Electrical Accessories",
+    category: "Electrical & Electronics",
+    page: "electrical",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    description: "Electrical essentials for everyday home use.",
+    tag: "ESSENTIAL"
+  },
+
+  {
+    id: 4,
+    name: "Modern Refrigerator",
+    category: "Home Appliances",
+    page: "appliances",
+    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    description: "Practical refrigeration solutions for your kitchen.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 5,
+    name: "Washing Machine",
+    category: "Home Appliances",
+    page: "appliances",
+    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
+    description: "Make laundry more convenient with modern appliances.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 6,
+    name: "Electric Blender",
+    category: "Home Appliances",
+    page: "appliances",
+    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80",
+    description: "A convenient addition to your everyday kitchen.",
+    tag: "ESSENTIAL"
+  },
+
+  {
+    id: 7,
+    name: "Standby Generator",
+    category: "Generators & Solar",
+    page: "generators",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+    description: "Explore generator options for home and business power needs.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 8,
+    name: "Solar Panel System",
+    category: "Generators & Solar",
+    page: "generators",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+    description: "Discover solar energy solutions for your property.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 9,
+    name: "Solar Inverter",
+    category: "Generators & Solar",
+    page: "generators",
+    image: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=800&q=80",
+    description: "Explore inverter options for dependable power management.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 10,
+    name: "Premium Bedroom Mattress",
+    category: "Beddings & Mattresses",
+    page: "beddings",
+    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+    description: "Bring comfort and relaxation into your bedroom.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 11,
+    name: "Luxury Bedding Collection",
+    category: "Beddings & Mattresses",
+    page: "beddings",
+    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80",
+    description: "Beautiful bedding essentials for a comfortable bedroom.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 12,
+    name: "Modern Bedroom Set",
+    category: "Beddings & Mattresses",
+    page: "beddings",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+    description: "Create a welcoming and relaxing bedroom environment.",
+    tag: "COLLECTION"
+  },
+
+  {
+    id: 13,
+    name: "Kitchen Cooking Equipment",
+    category: "Kitchen Equipment",
+    page: "kitchen",
+    image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80",
+    description: "Useful kitchen essentials for everyday cooking.",
+    tag: "ESSENTIAL"
+  },
+
+  {
+    id: 14,
+    name: "Modern Kitchen Appliances",
+    category: "Kitchen Equipment",
+    page: "kitchen",
+    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80",
+    description: "Functional equipment to make kitchen tasks easier.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 15,
+    name: "Kitchen Accessories",
+    category: "Kitchen Equipment",
+    page: "kitchen",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80",
+    description: "Explore useful accessories for your kitchen.",
+    tag: "COLLECTION"
+  },
+
+  {
+    id: 16,
+    name: "Modern Living Room Furniture",
+    category: "Furniture & Home Decor",
+    page: "furniture",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+    description: "Give your living room a refined and welcoming look.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 17,
+    name: "Modern Centre Table",
+    category: "Furniture & Home Decor",
+    page: "furniture",
+    image: "https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=800&q=80",
+    description: "Stylish tables to complement your interior.",
+    tag: "FEATURED"
+  },
+
+  {
+    id: 18,
+    name: "Decorative Centre Rug",
+    category: "Furniture & Home Decor",
+    page: "furniture",
+    image: "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80",
+    description: "Add warmth and character to your living space.",
+    tag: "COLLECTION"
+  },
+
+  {
+    id: 19,
+    name: "Interior Wall Paint",
+    category: "Paints & Decoration",
+    page: "paints",
+    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80",
+    description: "Explore paint options for beautiful interior finishes.",
+    tag: "POPULAR"
+  },
+
+  {
+    id: 20,
+    name: "Decorative Paint Finishes",
+    category: "Paints & Decoration",
+    page: "paints",
+    image: "https://images.unsplash.com/photo-1503594384566-461fe158e797?auto=format&fit=crop&w=800&q=80",
+    description: "Discover decorative options for transforming your space.",
+    tag: "FEATURED"
+  }
+
+];
+
+/* =========================================
+   CATEGORY INFORMATION
+========================================= */
+
+const categoryInfo = {
+
+  electrical: {
+    title: "Electrical & Electronics",
+    subtitle: "Technology and electrical essentials for modern living.",
+    image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1400&q=80",
+    description: "Explore our selection of electrical and electronic products designed to support your home and everyday lifestyle."
+  },
+
+  appliances: {
+    title: "Home Appliances",
+    subtitle: "Convenience and functionality for every home.",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=80",
+    description: "Discover practical home appliances that make household activities easier and more convenient."
+  },
+
+  generators: {
+    title: "Generators & Solar",
+    subtitle: "Explore reliable power solutions.",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=80",
+    description: "Explore generators, solar panels, inverters and other power-related equipment for your home and business."
+  },
+
+  beddings: {
+    title: "Beddings & Mattresses",
+    subtitle: "Comfort begins with the right essentials.",
+    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1400&q=80",
+    description: "Discover mattresses and bedding products that help create a comfortable, relaxing and beautiful bedroom."
+  },
+
+  kitchen: {
+    title: "Kitchen Equipment",
+    subtitle: "Everything you need for a functional kitchen.",
+    image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1400&q=80",
+    description: "Explore kitchen equipment, accessories and appliances that make food preparation and everyday cooking easier."
+  },
+
+  furniture: {
+    title: "Furniture & Home Decor",
+    subtitle: "Give your living space a beautiful identity.",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80",
+    description: "Explore furniture, modern tables, centre rugs, chairs and decorative essentials for your home."
+  },
+
+  paints: {
+    title: "Paints & Decoration",
+    subtitle: "Beautiful finishes. Inspiring spaces.",
+    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80",
+    description: "Discover paint and decoration options for giving your home or business a fresh, attractive appearance."
+  }
+
+};
+
+/* =========================================
+   PRODUCT CARD GENERATOR
+========================================= */
+
+function productCard(product) {
+
+  const message = encodeURIComponent(
+    "Hello Onwini Candid Enterprise, I am interested in " +
+    product.name +
+    ". Please provide the price and availability."
+  );
+
+  return `
+    <article class="product-card" data-product="${product.name.toLowerCase()}">
+
+      <div class="product-image">
+        <img
+          src="${product.image}"
+          alt="${product.name}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80';"
+        >
+        <span class="product-tag">${product.tag}</span>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">${product.category}</span>
+
+        <h3>${product.name}</h3>
+
+        <p>${product.description}</p>
+
+        <div class="product-price">Price: Contact for quotation</div>
+
+        <a
+          href="${whatsappLink}?text=${message}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="product-enquiry"
+        >
+          ENQUIRE ON WHATSAPP ↗
+        </a>
+      </div>
+
+    </article>
+  `;
+}
+
+/* =========================================
+   FEATURED PRODUCTS
+========================================= */
+
+document.getElementById("featuredProducts").innerHTML =
+  products.filter(p => [1,4,7,10,13,16,19,8].includes(p.id))
+  .map(productCard)
+  .join("");
+
+/* =========================================
+   CATEGORY PAGE BUILDER
+========================================= */
+
+function buildCategoryPage(key) {
+
+  const info = categoryInfo[key];
+
+  if (!info) return;
+
+  const page = document.getElementById("page-" + key);
+
+  page.innerHTML = `
+
+    <section class="breadcrumb">
+      <div class="container-main">
+        <small>OUR PRODUCT COLLECTION</small>
+        <h1>${info.title}</h1>
+        <p>Home / ${info.title}</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-main">
+
+        <div class="grid md:grid-cols-2 gap-9 items-center mb-14">
+
+          <div>
+            <div class="section-label mb-4">EXPLORE OUR PRODUCTS</div>
+            <h2 class="section-title">${info.subtitle}</h2>
+            <p class="section-description mt-5">${info.description}</p>
+
+            <a
+              href="${whatsappLink}?text=${encodeURIComponent("Hello Onwini Candid Enterprise, I would like to enquire about your " + info.title + " collection.")}"
+              target="_blank"
+              class="gold-btn mt-7"
+            >
+              ENQUIRE ABOUT PRODUCTS ↗
+            </a>
+          </div>
+
+          <div>
+            <img
+              src="${info.image}"
+              alt="${info.title}"
+              class="w-full h-64 md:h-80 object-cover"
+            >
+          </div>
+
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mb-8">
+
+          <div>
+            <div class="section-label mb-2">AVAILABLE COLLECTION</div>
+            <h2 class="text-xl font-extrabold" style="color:var(--navy)">
+              Explore ${info.title}
+            </h2>
+          </div>
+
+          <div class="search-wrap w-full md:w-96">
+            <input
+              type="search"
+              id="search-${key}"
+              placeholder="Search products..."
+              oninput="filterProducts('${key}')"
+              aria-label="Search products"
+            >
+            <button type="button" onclick="filterProducts('${key}')">SEARCH</button>
+          </div>
+
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-8">
+          <button class="filter-btn active" onclick="setFilter('${key}','all',this)">All Products</button>
+          <button class="filter-btn" onclick="setFilter('${key}','popular',this)">Popular</button>
+          <button class="filter-btn" onclick="setFilter('${key}','featured',this)">Featured</button>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5" id="products-${key}"></div>
+
+        <div class="empty-state" id="empty-${key}">
+          No matching products found. Try another search or contact us on WhatsApp.
+        </div>
+
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container-main relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <div class="section-label mb-3">NEED HELP CHOOSING?</div>
+          <h2>Let's Help You Find What You Need.</h2>
+          <p class="text-xs text-gray-300 mt-3">Contact us directly for product details and pricing.</p>
+        </div>
+        <a href="${whatsappLink}?text=${encodeURIComponent("Hello, I would like assistance with " + info.title + ".")}" target="_blank" class="gold-btn">CHAT WITH US ↗</a>
+      </div>
+    </section>
+  `;
+
+  renderProducts(key, "all");
+}
+
+/* =========================================
+   CATEGORY FILTERING
+========================================= */
+
+function renderProducts(key, filter) {
+
+  const container = document.getElementById("products-" + key);
+
+  if (!container) return;
+
+  let selected = products.filter(p => p.page === key);
+
+  if (filter === "popular") {
+    selected = selected.filter(p => p.tag === "POPULAR");
+  }
+
+  if (filter === "featured") {
+    selected = selected.filter(p => p.tag === "FEATURED");
+  }
+
+  container.innerHTML = selected.map(productCard).join("");
+
+  const empty = document.getElementById("empty-" + key);
+
+  if (empty) {
+    empty.style.display = selected.length ? "none" : "block";
+  }
+
+  const search = document.getElementById("search-" + key);
+
+  if (search) search.value = "";
+}
+
+function setFilter(key, filter, button) {
+
+  const buttons = button.parentElement.querySelectorAll(".filter-btn");
+
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  button.classList.add("active");
+
+  renderProducts(key, filter);
+}
+
+function filterProducts(key) {
+
+  const input = document.getElementById("search-" + key);
+
+  const query = input.value.toLowerCase().trim();
+
+  const selected = products.filter(p =>
+    p.page === key &&
+    (
+      p.name.toLowerCase().includes(query) ||
+      p.category.toLowerCase().includes(query) ||
+      p.description.toLowerCase().includes(query)
+    )
+  );
+
+  document.getElementById("products-" + key).innerHTML =
+    selected.map(productCard).join("");
+
+  document.getElementById("empty-" + key).style.display =
+    selected.length ? "none" : "block";
+}
+
+/* =========================================
+   MULTI-PAGE NAVIGATION
+   Each page has its own URL/hash route.
+========================================= */
+
+const routeMap = {
+  home: "home",
+  electrical: "electrical",
+  appliances: "appliances",
+  generators: "generators",
+  beddings: "beddings",
+  kitchen: "kitchen",
+  furniture: "furniture",
+  paints: "paints",
+  about: "about",
+  contact: "contact"
+};
+
+const routePaths = {
+  home: "/",
+  electrical: "/electrical-electronics",
+  appliances: "/home-appliances",
+  generators: "/generators-solar",
+  beddings: "/beddings-mattresses",
+  kitchen: "/kitchen-equipment",
+  furniture: "/furniture-home-decor",
+  paints: "/paints-decoration",
+  about: "/about-us",
+  contact: "/contact-us"
+};
+
+function navigate(page, updateHistory = true) {
+
+  if (!routeMap[page]) page = "home";
+
+  document.querySelectorAll(".page").forEach(section => {
+    section.classList.remove("active");
+  });
+
+  const selectedPage = document.getElementById("page-" + page);
+
+  if (selectedPage) {
+    selectedPage.classList.add("active");
+  }
+
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.classList.remove("active");
+    if (link.dataset.nav === page) {
+      link.classList.add("active");
+    }
+  });
+
+  if (updateHistory) {
+    history.pushState(
+      { page: page },
+      "",
+      routePaths[page] + (page === "home" ? "" : "")
+    );
+  }
+
+  closeMenu();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+  document.title =
+    page === "home"
+      ? "Onwini Candid Enterprise | Quality for Every Home"
+      : routeMap[page].charAt(0).toUpperCase() +
+        routeMap[page].slice(1) +
+        " | Onwini Candid Enterprise";
+}
+
+function resolveRoute() {
+
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+  const match = Object.keys(routePaths).find(
+    key => routePaths[key] === path
+  );
+
+  return match || "home";
+}
+
+window.addEventListener("popstate", function() {
+  navigate(resolveRoute(), false);
+});
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+function toggleMenu() {
+
+  const menu = document.getElementById("mobileMenu");
+  const button = document.getElementById("menuToggle");
+
+  menu.classList.toggle("open");
+
+  const isOpen = menu.classList.contains("open");
+
+  button.setAttribute("aria-expanded", String(isOpen));
+  button.innerHTML = isOpen ? "✕" : "☰";
+}
+
+function closeMenu() {
+
+  const menu = document.getElementById("mobileMenu");
+  const button = document.getElementById("menuToggle");
+
+  menu.classList.remove("open");
+  button.setAttribute("aria-expanded", "false");
+  button.innerHTML = "☰";
+}
+
+document.addEventListener("click", function(event) {
+
+  const menu = document.getElementById("mobileMenu");
+  const toggle = document.getElementById("menuToggle");
+
+  if (
+    menu.classList.contains("open") &&
+    !menu.contains(event.target) &&
+    !toggle.contains(event.target)
+  ) {
+    closeMenu();
+  }
+
+});
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const interest = document.getElementById("customerInterest").value;
+  const message = document.getElementById("customerMessage").value.trim();
+
+  if (!name || !phone || !interest || !message) {
+    alert("Please complete all required fields.");
+    return;
+  }
+
+  const text = `
+Hello Onwini Candid Enterprise!
+
+I would like to make a product enquiry.
+
+Name: ${name}
+
+Phone Number: ${phone}
+
+Product Category: ${interest}
+
+Message: ${message}
+
+I look forward to hearing from you.
+  `;
+
+  const url = whatsappLink + "?text=" + encodeURIComponent(text);
+
+  window.open(url, "_blank", "noopener,noreferrer");
+
+});
+
+/* =========================================
+   INITIALIZE WEBSITE
+========================================= */
+
+Object.keys(categoryInfo).forEach(key => {
+  buildCategoryPage(key);
+});
+
+document.getElementById("currentYear").textContent =
+  new Date().getFullYear();
+
+navigate(resolveRoute(), false);
+
+</script>
+
+</body>
+</html>
