@@ -36,7 +36,7 @@ Industry: Agriculture | Agribusiness | Farm Produce
 
 A professional and engaging website designed to showcase agricultural products and farming services, highlight the farm's offerings, attract customers and business partners, and strengthen its online presence.
 
-https://psamiel-s-farms.vertlio.com
+https://psamielsfarms.vertlio.com/
 
 ABOUT ME
 I am an AI Website Builder focused on creating modern, responsive and user-friendly websites for businesses and individuals.
